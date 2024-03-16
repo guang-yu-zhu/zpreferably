@@ -1,4 +1,4 @@
-url:
+url: http://guang-yu-zhu.github.io/zpreferably/
 template:
   package: zpreferably
   bootstrap: 3
@@ -24,7 +24,7 @@ development:
 
 repo:
   url:
-    home: https://github.com/guang-yu-zhu/zpreferably/
+    home: http://guang-yu-zhu.github.io/zpreferably/
   branch: main
 
 navbar:
