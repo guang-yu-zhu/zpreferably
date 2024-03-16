@@ -18,10 +18,8 @@ vignettes/*.pdf
 .Renviron
 
 # Folders
-docs/
 .idea/
 
 # macOS
 **/.DS_Store
-docs
 .DS_Store
