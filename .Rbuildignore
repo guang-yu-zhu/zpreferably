@@ -1,0 +1,16 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^logo.*$
+^\.travis\.yml$
+^\.\.Rcheck$
+^\.github$
+^\.idea$
+^\.DS_Store$
+^inst/\.DS_Store$
+^inst/pkgdown/\.DS_Store$
+^cran-comments\.md$
+^CRAN-RELEASE$
+^CRAN-SUBMISSION$

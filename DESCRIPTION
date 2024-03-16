@@ -1,0 +1,26 @@
+Type: Package
+Package: zpreferably
+Title: A 'pkgdown' Template
+Version: 0.4.1
+Authors@R: 
+    person(given = "Guangyu",
+           family = "Zhu",
+           role = c("aut", "cre"),
+           email = "guangyuzhu@uri.edu")
+Maintainer: Guangyu Zhu <guangyuzhu@uri.edu>
+Description: This is an accessible template for 'pkgdown'. It uses two
+    bootstrap themes, Flatly and Darkly and utilizes the
+    'prefers-color-scheme' CSS variable to automatically serve either of
+    the two based on user’s operating system setting, or allowing them to
+    manually toggle between them.
+License: MIT + file LICENSE
+URL: https://guangyuzhu.rbind.io/
+Depends:
+    R (>= 3.1.0),
+    pkgdown,
+    knitr
+VignetteBuilder: 
+    knitr
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.0
