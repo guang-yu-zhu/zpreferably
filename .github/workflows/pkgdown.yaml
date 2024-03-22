@@ -38,7 +38,7 @@ jobs:
         run: |
           install.packages(c("pkgdown", "devtools","remotes"))
           remotes::install_deps(dependencies = TRUE)
-          remotes::install_github("guang-yu-zhu/zpreferbaly")
+          remotes::install_github("guang-yu-zhu/zpreferably")
         shell: Rscript {0}
       - name: Build site
         run: pkgdown::build_site_github_pages(new_process = FALSE, install = FALSE)
