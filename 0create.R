@@ -5,6 +5,7 @@ file.edit('_pkgdown.yml')
 file.edit('NAMESPACE')
 file.edit('DESCRIPTION')
 file.edit('README.md')
+file.edit('.github/workflows/pkgdown.yaml')
 #----- customize template
 file.edit('inst/pkgdown/BS3/templates/footer.html')
 file.edit('inst/pkgdown/BS3/assets/preferably.css')
@@ -19,6 +20,7 @@ preview_site()
 
 #  usethis -----
 library(usethis)
+use_pkgdown_github_pages()
 use_pipe()
 use_description(fields = list(Language = "es"))
 edit_r_profile(scope = c("user", "project"))

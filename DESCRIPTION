@@ -14,7 +14,8 @@ Description: This is an accessible template for 'pkgdown'. It uses two
     the two based on user’s operating system setting, or allowing them to
     manually toggle between them.
 License: MIT + file LICENSE
-URL: https://guangyuzhu.rbind.io/
+URL: https://guangyuzhu.rbind.io/,
+    https://guang-yu-zhu.github.io/zpreferably/
 Depends:
     R (>= 3.1.0),
     pkgdown,

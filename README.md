@@ -14,13 +14,33 @@ devtools::install_github('guang-yu-zhu/zpreferably')
 After the successful installation, if you already have your pkgdown setup ready, you only need to specify the `template` parameter as follow. Then, as before, you can build your site using `build_site()` and deploy it manually using `deploy_on_branch()`.
 
 ```YAML
-url:
+url: http://guang-yu-zhu.github.io/zpreferably/
 template:
   package: zpreferably
   bootstrap: 3
   params:
     ganalytics:
-    toggle: manual
+    toggle: manual # Manual Light/Dark Toggle
+home:
+  title: zpreferably - a 'pkgdown' template
+  description: An accessible template for pkgdown websites with dynamic light/dark mode support
+authors:
+  Guangyu Zhu:
+    href: https://guangyuzhu.rbind.io/
+development:
+  mode: auto
+repo:
+  url:
+    home: https://github.com/guang-yu-zhu/zpreferably
+  branch: main
+navbar:
+  structure:
+    left:  [home, reference, news]
+    right: [personal,github]
+  components:
+    personal:
+        text: "Persoanl Website"
+        href: http://guangyuzhu.rbind.io
 ```
 
 > ⚠️ Keep in mind that you should NOT use `default_assets: false` when you change the default template. 'preferably' relies on some of the 'pkgdown' assets and templates.
@@ -32,18 +52,18 @@ In the case that you are using CI systems to build and deploy your website, you 
 ```YAML
 - name: Install dependencies
   run: |
-    # ⚠️ leave other commands intact, 
+    # ⚠️ leave other commands intact,
     # and add the following command to the end of the list 👇🏼
     remotes::install_deps(dependencies = TRUE)
     install.packages("pkgdown", type = "binary")
-    install.packages("preferably")
+    devtools::install_github('guang-yu-zhu/zpreferably')
 ```
 
 If you are using Travis-CI, add the following line to your `.travis.yml` file:
 
 ```YAML
 r_github_packages:
-  - amirmasoudabdol/preferably
+  - guang-yu-zhu/zpreferably
 ```
 
 ## Customization

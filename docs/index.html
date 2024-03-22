@@ -78,7 +78,15 @@
           </a>
         </li>
         
-        
+        <li>
+  <a href="http://guangyuzhu.rbind.io" class="external-link">Persoanl Website</a>
+</li>
+<li>
+  <a href="https://github.com/guang-yu-zhu/zpreferably" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
         
         
 
@@ -129,14 +137,14 @@
 <p>In the case that you are using CI systems to build and deploy your website, you need to make sure that ‘preferably’ is available on the environment. For <a href="https://pkgdown.r-lib.org/articles/pkgdown.html?q=github%20action#publishing" class="external-link">GitHub Action</a>, add the following line to the “Install dependencies” section of your <code>.github/workflows/pkgdown.yaml</code> file:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install dependencies</span></span>
 <span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="fu">  run</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>    # ⚠️ leave other commands intact, </span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>    # ⚠️ leave other commands intact,</span>
 <span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>    # and add the following command to the end of the list 👇🏼</span>
 <span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>    remotes::install_deps(dependencies = TRUE)</span>
 <span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a>    install.packages("pkgdown", type = "binary")</span>
-<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>    install.packages("preferably")</span></code></pre></div>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>    devtools::install_github('guang-yu-zhu/zpreferably')</span></code></pre></div>
 <p>If you are using Travis-CI, add the following line to your <code>.travis.yml</code> file:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">r_github_packages</span><span class="kw">:</span></span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> amirmasoudabdol/preferably</span></span></code></pre></div>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> guang-yu-zhu/zpreferably</span></span></code></pre></div>
 </div>
 </div>
 <div class="section level2">
@@ -190,7 +198,7 @@
     <div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li><a href="http://guang-yu-zhu.github.io/zpreferably/">Browse source code</a></li>
+<li><a href="https://github.com/guang-yu-zhu/zpreferably" class="external-link">Browse source code</a></li>
 </ul>
 </div>
 
@@ -229,12 +237,10 @@
   <p></p>
 <p>Developed by <a href="https://guangyuzhu.rbind.io/" class="external-link">Guangyu Zhu</a>.</p>
 </div>
-<!--
 <div class="pkgdown">
-  <p><p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 2.0.7.</p></p>
-  <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer">preferably</a> template.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
--->
 
       </footer>
 </div>
