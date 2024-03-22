@@ -10,6 +10,8 @@ file.edit('.github/workflows/pkgdown.yaml')
 file.edit('inst/pkgdown/BS3/templates/footer.html')
 file.edit('inst/pkgdown/BS3/assets/preferably.css')
 #-----
+# Create favicons: run once when you have your man/figures/logo.png
+pkgdown::build_favicons()
 library(pkgdown)
 library(roxygen2)
 roxygenise(clean = TRUE)
@@ -17,13 +19,13 @@ build_home()
 build_reference()
 build_site()
 preview_site()
-
+deploy_to_branch()
 #  usethis -----
 library(usethis)
-use_pkgdown_github_pages()
-use_pipe()
-use_description(fields = list(Language = "es"))
-edit_r_profile(scope = c("user", "project"))
+#Use GitHub actions to automatically build and publish the site
+#usethis::use_github_actions()
+deploy_to_branch()
+use_pipe() # Use magrittr's pipe in your package
 use_mit_license()       # need a LICENSE file
 use_roxygen_md()        # use {roxygen2} for documentation and configuration
 use_package_doc()       # setup a package-level manual page
