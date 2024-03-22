@@ -36,7 +36,7 @@ jobs:
           needs: website
       - name: Install dependencies
         run: |
-          install.packages(c("pkgdown", "devtools","remotes"), type = "binary")
+          install.packages(c("pkgdown", "devtools","remotes"))
           remotes::install_deps(dependencies = TRUE)
           remotes::install_github("guang-yu-zhu/zpreferbaly")
         shell: Rscript {0}
