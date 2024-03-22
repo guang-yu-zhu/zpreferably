@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: |
           remotes::install_deps(dependencies = TRUE)
-          install.packages(c("pkgdown", "devtools"), type = "binary")
+          install.packages(c("pkgdown", "devtools", "remotes"), type = "binary")
           remotes::install_github("guang-yu-zhu/zpreferbaly")
         shell: Rscript {0}
       - name: Build site
