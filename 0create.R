@@ -15,7 +15,7 @@ roxygenise(clean = TRUE)
 build_home()
 build_reference()
 build_site()
-
+preview_site()
 
 #  usethis -----
 library(usethis)
